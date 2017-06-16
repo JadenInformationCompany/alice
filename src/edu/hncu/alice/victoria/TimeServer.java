@@ -59,6 +59,7 @@ class TimeHandler implements Runnable {
 					break;
 				}
 				String time = str + " : " + System.currentTimeMillis();
+				System.out.println(time);
 				pw.println(time);
 			}
 		} catch (Exception e) {
