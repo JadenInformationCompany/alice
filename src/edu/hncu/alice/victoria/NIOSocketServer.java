@@ -35,7 +35,7 @@ public class NIOSocketServer {
 			//将服务端套接字甬道连接方式调整为非阻塞模式
 			ssc.configureBlocking(false);
 			//将服务端套接字甬道绑定到本机服务端端口
-			ssc.socket().bind(new InetSocketAddress(PORT));
+			ssc.socket().bind(new InetSocketAddress("192.168.1.158", PORT));
 			//将服务端套接字甬道OP_ACCEPT事件注册到甬道选择器上
 			ssc.register(sel, SelectionKey.OP_ACCEPT);
 			System.out.println("Server on port:" + PORT);

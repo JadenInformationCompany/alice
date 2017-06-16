@@ -20,7 +20,7 @@ public class NServer {
 		selector = Selector.open();
 		//通过open方法来打开一个未绑定的ServerSocketChannel实例  
 		ServerSocketChannel server = ServerSocketChannel.open();
-		InetSocketAddress isa = new InetSocketAddress("127.0.0.1", 30000);
+		InetSocketAddress isa = new InetSocketAddress("192.168.1.158", 30000);
 		//将该ServerSocketChannel绑定到指定ip地址  
 		server.socket().bind(isa);
 		//设置ServerSocket以非阻塞方式工作  
