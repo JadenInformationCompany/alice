@@ -21,7 +21,7 @@ public class TimeClient {
 			pw.println("niubi");
 			pw.println("end");
 
-			System.out.println("send message success...");
+			System.out.println("send message success...222");
 			while (true) {
 				String res = br.readLine();
 				if (null == res || "".equals(res)) {
